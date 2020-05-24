@@ -5,12 +5,8 @@
   <ul class="nav justify-content-end">
     <li class="nav-item">
       <!-- <a class="nav-link text-light" [routerLink]="['/login']">切换账号</a> -->
-
       <div class="btn-group mr-3">
-        <button type="button" class="btn btn-outline-light">当前用户：</button>
-        <!-- <div>{{msg}}</div>> -->
-        <!-- {{msg}} -->
-        <!-- <p class="text-light" #action>{{name}}</p> -->
+        <button type="button" class="btn btn-outline-light ">欢迎您！{{msg}}</button>
         <!-- <button (click)="handelClick()">获取</button> -->
         <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
           <button class="btn btn-outline-light dropdown-toggle-split" ngbDropdownToggle></button>
@@ -19,6 +15,7 @@
           </div>
         </div>
       </div>
+
     </li>
     <li class="nav-item ">
       <a class="nav-link text-light" [routerLink]="['exit']">退出</a>

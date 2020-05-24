@@ -133,4 +133,14 @@ export class GradeComponent implements OnInit {
     }
     // console.log("sds");
   }
+
+
+  reset(): void {
+    try {
+      this.stuForm.controls['id'].reset();
+      this.stuForm.controls['stuName'].reset();
+      this.stuForm.controls['webgrade'].reset();
+    } catch (error) {
+    }
+  }
 }

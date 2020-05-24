@@ -86,7 +86,7 @@ export class LoginComponent implements OnInit {
         console.log(val);
         if (val.succ == true) {
           this.authService.login();
-          this.router.navigate(['/management'], { queryParams: { user: this.msg } });
+          this.router.navigate(['/management'], { queryParams: { name: this.msg } });
         } else if ((val.succ == false)) {
           alert('用户名或密码错误！');
         }

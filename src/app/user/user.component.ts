@@ -65,6 +65,7 @@ export class UserComponent implements OnInit {
   searchall() {
     if (this.userName.value) {
       this.users$ = <Observable<User>>this.httpclient.get(this.baseUrl + 'users');
+      // this.stuForm.patchValue(null);
     }
   }
 
@@ -118,6 +119,14 @@ export class UserComponent implements OnInit {
           }
         }
       )
+    }
+  }
+
+  reset(): void {
+    try {
+      this.userForm.controls['userName'].reset();
+      this.userForm.controls['password'].reset();
+    } catch (error) {
     }
   }
 }
